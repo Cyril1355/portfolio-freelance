@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cyril Bimbi — Développeur freelance</title>
+  <meta name="description" content="Cyril Bimbi — Développeur freelance (Python, C++, SQL, Réseaux). Contactez-moi pour vos missions.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <h1>Cyril Bimbi</h1>
+        <p class="tag">Développeur freelance — Python · C++ · SQL · Réseaux</p>
+      </div>
+      <nav class="nav">
+        <a href="#propos">À propos</a>
+        <a href="#competences">Compétences</a>
+        <a href="#projets">Projets</a>
+        <a href="#contact" class="cta">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="accueil">
+      <div class="container hero-inner">
+        <div class="hero-left">
+          <h2>Je conçois des solutions logicielles fiables et des infrastructures réseau sécurisées.</h2>
+          <p>Disponible pour missions freelance : développement Python & C++, administration Linux, conception SQL et scripts d'automatisation.</p>
+          <div class="hero-cta">
+            <a href="#contact" class="btn">Demander un devis gratuit</a>
+            <a href="cv.pdf" class="btn-outline" download>Télécharger mon CV</a>
+          </div>
+        </div>
+        <div class="hero-right">
+          <div class="avatar" aria-hidden="true">Photo</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- À propos -->
+    <section id="propos" class="section container">
+      <h3>À propos</h3>
+      <p>Je m'appelle <strong>Cyril Bimbi</strong>, diplômé d'un BTS CIEL. J'interviens sur le développement logiciel, l'automatisation, la gestion de bases de données et l'administration réseau. J'apporte des solutions robustes, documentées et testées.</p>
+      <p><a class="link-download" href="cv.pdf" download>Télécharger mon CV (PDF)</a></p>
+    </section>
+
+    <!-- Compétences -->
+    <section id="competences" class="section container">
+      <h3>Compétences</h3>
+      <div class="skills-grid">
+        <div class="skill">
+          <h4>Langages</h4>
+          <p>Python · C++ · SQL · Bash</p>
+        </div>
+        <div class="skill">
+          <h4>Systèmes & Réseau</h4>
+          <p>Linux · Routage · Sécurité réseau · Administration</p>
+        </div>
+        <div class="skill">
+          <h4>Outils</h4>
+          <p>Git · Docker · Tests · CI basique</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projets -->
+    <section id="projets" class="section container">
+      <h3>Projets</h3>
+
+      <article class="project">
+        <h4>Distributeur connecté — Gestion base de données</h4>
+        <p><em>Projet scolaire / prototype</em> — Conception d'un système de distribution automatique avec : interface de gestion, API serveur, et base de données SQL pour la gestion des stocks, transactions et journaux. J'ai développé la couche d'accès aux données, les requêtes optimisées et les scripts d'import/export. Ce projet m'a permis de travailler sur l'intégrité des données et la communication client/serveur.</p>
+        <ul>
+          <li>Technos : Python (backend), SQLite / MySQL (SQL), scripts d'automatisation Bash</li>
+          <li>Fonctions clés : gestion des stocks, journalisation des transactions, import/export CSV, scripts de déploiement</li>
+        </ul>
+      </article>
+
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section container contact-section">
+      <h3>Contact</h3>
+      <p>Décris ton projet ci-dessous — je te réponds rapidement.</p>
+
+      <!-- Netlify Forms: name + data-netlify + honeypot -->
+      <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" id="contactForm">
+        <!-- Honeypot -->
+        <input type="hidden" name="form-name" value="contact">
+        <p class="hidden"><label>Ne pas remplir : <input name="bot-field"></label></p>
+
+        <label>
+          <span>Nom</span>
+          <input type="text" name="name" required>
+        </label>
+
+        <label>
+          <span>Email</span>
+          <input type="email" name="email" required>
+        </label>
+
+        <label>
+          <span>Objet</span>
+          <input type="text" name="subject" placeholder="Ex : Dev Python / Admin Réseau" required>
+        </label>
+
+        <label>
+          <span>Message</span>
+          <textarea name="message" rows="6" required></textarea>
+        </label>
+
+        <div class="form-actions">
+          <button type="submit" class="btn">Envoyer</button>
+          <button type="button" id="mailtoFallback" class="btn-outline">Envoyer par mail</button>
+        </div>
+
+        <p id="formMsg" class="form-msg" aria-live="polite"></p>
+      </form>
+
+      <p class="contact-direct">Ou contacte-moi directement : <a href="mailto:cyrilbimbi13@gmail.com">cyrilbimbi13@gmail.com</a></p>
+    </section>
+
+    <!-- Mentions légales & Politique de confidentialité -->
+    <section id="legal" class="section container legal-section">
+      <h3>Mentions légales & Politique de confidentialité</h3>
+
+      <div class="legal-block">
+        <h4>Mentions légales</h4>
+        <p>Éditeur : <strong>Cyril Bimbi</strong><br>
+        Adresse e-mail : <a href="mailto:cyrilbimbi13@gmail.com">cyrilbimbi13@gmail.com</a></p>
+        <p>Hébergement : Netlify, Inc. — https://www.netlify.com/</p>
+      </div>
+
+      <div class="legal-block">
+        <h4>Politique de confidentialité</h4>
+        <p>Les informations collectées via le formulaire (nom, e-mail, objet, message) sont utilisées uniquement pour répondre à vos demandes. Elles ne sont pas partagées à des tiers sans votre consentement. Les données sont conservées dans l'outil de gestion de formulaires de l'hébergeur (Netlify) et peuvent être supprimées sur demande à l'adresse e-mail indiquée ci-dessus.</p>
+        <p>Conformément au RGPD, vous disposez d'un droit d'accès, de rectification et de suppression des données vous concernant ; pour l'exercer, contactez : <a href="mailto:cyrilbimbi13@gmail.com">cyrilbimbi13@gmail.com</a>.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Cyril Bimbi — Freelance • <a href="#legal">Mentions légales & Politique</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
