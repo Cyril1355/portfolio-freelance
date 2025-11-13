@@ -105,3 +105,233 @@ input,textarea,select{width:100%;padding:10px;border:1px solid #e6eef8;border-ra
   .hero-inner{flex-direction:column;align-items:flex-start}
   .nav{display:none}
 }
+/* --- Section Création de sites web --- */
+.web-section {
+  background: #f9fafb;
+  border-radius: 20px;
+  padding: 4rem 2rem;
+  margin-top: 3rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.web-section h3 {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  color: #222;
+}
+
+.web-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.web-text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.web-text ul {
+  margin-bottom: 1.5rem;
+}
+
+.web-text li {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.web-visual img {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .web-grid {
+    grid-template-columns: 1fr;
+  }
+  .web-visual {
+    order: -1;
+  }
+  .web-section {
+    padding: 3rem 1rem;
+  }
+}
+/* --- Section Création de sites web (avec icônes) --- */
+.web-section {
+  background: #f9fafb;
+  border-radius: 20px;
+  padding: 4rem 2rem;
+  margin-top: 3rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.web-section h3 {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  color: #222;
+}
+
+.web-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.web-text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.web-features {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-weight: 500;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  color: #0070f3;
+  flex-shrink: 0;
+}
+
+.web-visual img {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .web-grid {
+    grid-template-columns: 1fr;
+  }
+  .web-visual {
+    order: -1;
+    margin-bottom: 1.5rem;
+  }
+  .web-section {
+    padding: 3rem 1rem;
+  }
+  .web-features {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* --- Section Avis Clients --- */
+.reviews-section {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 4rem 2rem;
+  margin-top: 3rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.reviews-section h3 {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.reviews-list {
+  display: grid;
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.review {
+  background: #f9fafb;
+  padding: 1.2rem 1.5rem;
+  border-radius: 12px;
+  border-left: 4px solid #0070f3;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+.review-text {
+  font-style: italic;
+  margin-bottom: 0.8rem;
+  line-height: 1.5;
+}
+
+.review-author {
+  text-align: right;
+  font-weight: 600;
+  color: #333;
+}
+
+.reviews-divider {
+  margin: 2rem auto;
+  width: 60%;
+  border: none;
+  border-top: 1px solid #ddd;
+}
+
+.review-form {
+  display: grid;
+  gap: 1rem;
+  max-width: 600px;
+  margin: 1.5rem auto 0;
+}
+
+.review-form label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+}
+
+.review-form input,
+.review-form textarea {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 0.6rem 0.8rem;
+  font-size: 1rem;
+}
+
+.review-form .btn {
+  justify-self: center;
+  margin-top: 0.5rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .reviews-section {
+    padding: 3rem 1rem;
+  }
+}
+/* --- Étoiles pour les avis --- */
+.stars {
+  color: #f5b301;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Optionnel : effet hover si tu veux les rendre interactives dans le futur */
+.review:hover .stars {
+  transform: scale(1.05);
+  transition: transform 0.2s ease;
+}
+.review-form select {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 0.6rem 0.8rem;
+  font-size: 1rem;
+  background-color: #fff;
+}
