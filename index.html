@@ -1,42 +1,166 @@
-<section id="avis" class="section container">
-  <div class="section-header">
-    <h3>Ce que mes clients disent</h3>
-    <p>La satisfaction de mes clients est ma priorité. Voici quelques retours d'expérience.</p>
-  </div>
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="google-site-verification" content="x48eURfa8ET7DlvSK6iaT-Q2X9PW56pxDBGNt2gkySU" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cyril Bimbi — Développeur Freelance Python, C++ & Web</title>
+  <meta name="description" content="Cyril Bimbi, développeur freelance expert en Python, C++ et création de sites web optimisés. Solutions logicielles et réseaux sur mesure.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
 
-  <div class="reviews-list">
-    <article class="review-item">
-      <div class="stars">★★★★★</div>
-      <p>“Cyril a créé un site clair et professionnel pour mon activité. Rapide et à l'écoute !”</p>
-      <p class="review-author">— Julien M., Serrurier</p>
-    </article>
-    
-    <article class="review-item">
-      <div class="stars">★★★★★</div>
-      <p>“Très bon contact, travail sérieux et livraison dans les temps. Je recommande !”</p>
-      <p class="review-author">— Amélie D., Indépendante</p>
-    </article>
-  </div>
-
-  <div class="review-form-container">
-    <h4>Laissez votre avis</h4>
-    <form id="reviewForm" class="modern-form" data-netlify="true" name="avis-clients" method="POST">
-      <input type="hidden" name="form-name" value="avis-clients">
-      
-      <div class="form-group">
-        <input type="text" name="client-name" placeholder="Votre nom ou entreprise" required>
-        <select name="rating" required>
-          <option value="5">★★★★★ (Excellent)</option>
-          <option value="4">★★★★☆ (Très bien)</option>
-          <option value="3">★★★☆☆ (Bien)</option>
-        </select>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <span class="logo-dot"></span>
+        <h1>Cyril Bimbi</h1>
       </div>
-      
-      <textarea name="review-text" rows="3" placeholder="Votre retour d'expérience..." required></textarea>
-      
-      <button type="submit" class="btn btn-outline">Publier mon avis</button>
-      <p id="reviewMsg" class="form-msg"></p>
-    </form>
-    <p class="small-text">Les avis sont vérifiés avant d'être publiés sur le site.</p>
-  </div>
-</section>
+      <nav class="nav">
+        <a href="#propos">À propos</a>
+        <a href="#competences">Expertise</a>
+        <a href="#projets">Projets</a>
+        <a href="#contact" class="cta">Démarrer un projet</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="accueil">
+      <div class="container hero-inner">
+        <div class="hero-left">
+          <span class="badge">Disponible pour missions freelance</span>
+          <h2>Concevoir des logiciels <span class="text-gradient">robustes</span> et des infrastructures agiles.</h2>
+          <p>Diplômé BTS CIEL, je conçois des solutions fiables : développement Python & C++, administration Linux et création de sites web modernes.</p>
+          <div class="hero-cta">
+            <a href="#contact" class="btn">Demander un devis</a>
+            <a href="cv.pdf" class="btn-outline" download>Télécharger mon CV</a>
+          </div>
+        </div>
+        <div class="hero-right">
+          <div class="avatar-container">
+            <img src="photo.jpg" alt="Cyril Bimbi" class="avatar">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="propos" class="section container">
+      <div class="section-header">
+        <h3>À propos</h3>
+        <p>Je m'appelle <strong>Cyril Bimbi</strong>. Mon objectif est de fournir des solutions <strong>performantes, claires et faciles à maintenir</strong>. Spécialisé en développement logiciel et réseaux, je mets mes compétences au service de vos projets techniques.</p>
+      </div>
+    </section>
+
+    <section id="competences" class="section container">
+      <h3>Mes domaines d'intervention</h3>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <span class="skill-icon">🐍</span>
+          <h4>Langages & Web</h4>
+          <p>HTML · CSS · JavaScript · Python · C++ · SQL · Bash</p>
+        </div>
+        <div class="skill-card">
+          <span class="skill-icon">🛡️</span>
+          <h4>Systèmes & Réseau</h4>
+          <p>Linux · Routage · Sécurité réseau · Docker · Administration</p>
+        </div>
+        <div class="skill-card">
+          <span class="skill-icon">⚙️</span>
+          <h4>Outils Pro</h4>
+          <p>Git · Tests unitaires · CI/CD basique · Automatisation de scripts</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="sitesweb" class="section web-section">
+      <div class="container">
+        <div class="web-grid">
+          <div class="web-text">
+            <h3>Création de sites vitrines</h3>
+            <p>Je conçois des sites modernes pour <strong>artisans, freelances et TPE</strong> qui souhaitent une présence en ligne pro.</p>
+            <ul class="check-list">
+              <li>📱 Design responsive (PC, Tablette, Mobile)</li>
+              <li>🔍 Optimisé pour le référencement Google (SEO)</li>
+              <li>🚀 Code propre et chargement rapide</li>
+            </ul>
+            <a href="#contact" class="btn">Je veux mon site web</a>
+          </div>
+          <div class="web-visual">
+            <div class="browser-mockup">
+              <div class="browser-dot"></div><div class="browser-dot"></div><div class="browser-dot"></div>
+              <div class="mockup-content">Structure Moderne & Épurée</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="avis" class="section container">
+      <h3>Ce que mes clients disent</h3>
+      <div class="reviews-list">
+        <article class="review-item">
+          <div class="stars">★★★★★</div>
+          <p>“Cyril a créé un site clair et professionnel pour mon activité. Rapide et à l'écoute !”</p>
+          <p class="review-author">— Julien M., Serrurier</p>
+        </article>
+        <article class="review-item">
+          <div class="stars">★★★★★</div>
+          <p>“Très bon contact, travail sérieux et livraison dans les temps. Je recommande !”</p>
+          <p class="review-author">— Amélie D., Indépendante</p>
+        </article>
+      </div>
+
+      <div class="review-form-container">
+        <h4>Laissez votre avis</h4>
+        <form id="reviewForm" class="modern-form" data-netlify="true" name="avis-clients" method="POST">
+          <input type="hidden" name="form-name" value="avis-clients">
+          <div class="form-group">
+            <input type="text" name="client-name" placeholder="Votre nom" required>
+            <select name="rating" required>
+              <option value="5">★★★★★ (Excellent)</option>
+              <option value="4">★★★★☆ (Très bien)</option>
+              <option value="3">★★★☆☆ (Bien)</option>
+            </select>
+          </div>
+          <textarea name="review-text" rows="3" placeholder="Votre retour d'expérience..." required></textarea>
+          <button type="submit" class="btn btn-outline">Publier mon avis</button>
+          <p id="reviewMsg" class="form-msg"></p>
+        </form>
+      </div>
+    </section>
+
+    <section id="contact" class="section container contact-section">
+      <div class="contact-card">
+        <div class="contact-info">
+          <h3>Un projet en tête ?</h3>
+          <p>Décrivez votre besoin et je vous répondrai sous 24h.</p>
+          <a href="mailto:cyrilbimbi13@gmail.com" class="email-link">cyrilbimbi13@gmail.com</a>
+        </div>
+        <form id="contactForm" class="modern-form" data-netlify="true" name="contact" method="POST">
+          <input type="hidden" name="form-name" value="contact">
+          <div class="form-group">
+            <input type="text" name="name" placeholder="Votre nom" required>
+            <input type="email" name="email" placeholder="Votre email" required>
+          </div>
+          <input type="text" name="subject" placeholder="Objet" required>
+          <textarea name="message" rows="5" placeholder="Détails de votre projet..." required></textarea>
+          <button type="submit" class="btn">Envoyer le message</button>
+          <p id="formMsg" class="form-msg"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Cyril Bimbi • <a href="#legal">Mentions légales</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
