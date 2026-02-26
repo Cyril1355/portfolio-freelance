@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="google-site-verification" content="tgJpsjzGzdYCXMRIzo2ekQmMcF_wbYNVwWzMG67lrA8" />
   <title>Cyril Bimbi — Développeur Freelance Python, C++ & Web</title>
   <meta name="description" content="Développeur freelance expert en Python, C++ et IoT LoRaWAN.">
   <link rel="stylesheet" href="styles.css">
@@ -114,38 +115,77 @@
       </div>
     </section>
 
-    <section id="avis" class="section container">
-      <h3>Témoignages</h3>
-      <div class="reviews-list">
-        <article class="review-item">
-          <div class="review-header">
-            <div class="client-avatar">JM</div>
-            <div>
-              <div class="stars">★★★★★</div>
-              <p class="review-author">Julien M.</p>
-            </div>
+   <section id="avis" class="section container">
+  <div class="section-header">
+    <span class="badge">Retours d'expérience</span>
+    <h3>Ce que disent mes clients</h3>
+  </div>
+
+  <div class="reviews-grid">
+    <article class="review-card">
+      <div class="review-rating">⭐⭐⭐⭐⭐</div>
+      <p class="review-text">"Cyril a su comprendre mes besoins techniques complexes pour mon réseau IoT. Un travail propre et une documentation claire. Je recommande !"</p>
+      <div class="review-footer">
+        <div class="client-info">
+          <div class="client-avatar">JM</div>
+          <div>
+            <p class="client-name">Julien M.</p>
+            <p class="client-job">Gérant Tech Solution</p>
           </div>
-          <p class="review-text">“Cyril a créé un site clair et professionnel pour mon activité.”</p>
-        </article>
+        </div>
       </div>
-      <div class="review-form-container">
-        <h4>Laissez votre avis</h4>
-        <form action="https://formspree.io/f/xbdawpdj" method="POST" class="modern-form">
-          <div class="form-group">
-            <input type="text" name="name" placeholder="Votre nom" required>
-            <select name="rating" required>
-              <option value="5">⭐⭐⭐⭐⭐</option>
-              <option value="4">⭐⭐⭐⭐</option>
-              <option value="3">⭐⭐⭐</option>
-              <option value="2">⭐⭐</option>
-              <option value="1">⭐</option>
-            </select>
+    </article>
+
+    <article class="review-card">
+      <div class="review-rating">⭐⭐⭐⭐⭐</div>
+      <p class="review-text">"Excellent développeur. Son expertise en Python nous a permis d'automatiser nos scripts de sauvegarde en un temps record."</p>
+      <div class="review-footer">
+        <div class="client-info">
+          <div class="client-avatar">AL</div>
+          <div>
+            <p class="client-name">Anne L.</p>
+            <p class="client-job">Responsable IT</p>
           </div>
-          <textarea name="comment" rows="3" placeholder="Votre message..." required></textarea>
-          <button type="submit" class="btn-outline">Publier mon avis</button>
-        </form>
+        </div>
       </div>
-    </section>
+    </article>
+  </div>
+
+  <div class="review-form-wrapper">
+    <div class="review-form-header">
+      <h4>Vous avez travaillé avec moi ?</h4>
+      <p>Votre avis est précieux pour mon activité.</p>
+    </div>
+    
+    <form action="https://formspree.io/f/TON_ID_AVIS" method="POST" class="modern-form">
+      <input type="hidden" name="_next" value="https://ton-pseudo.github.io/ton-depot/merci.html">
+      
+      <div class="form-row">
+        <div class="input-group">
+          <label>Votre Nom</label>
+          <input type="text" name="name" placeholder="Ex: Jean Dupont" required>
+        </div>
+        <div class="input-group">
+          <label>Note</label>
+          <select name="rating" required>
+            <option value="5">⭐⭐⭐⭐⭐ (Excellent)</option>
+            <option value="4">⭐⭐⭐⭐ (Très bien)</option>
+            <option value="3">⭐⭐⭐ (Bien)</option>
+            <option value="2">⭐⭐ (Moyen)</option>
+            <option value="1">⭐ (Insuffisant)</option>
+          </select>
+        </div>
+      </div>
+      
+      <div class="input-group">
+        <label>Votre message</label>
+        <textarea name="comment" rows="4" placeholder="Qu'avez-vous pensé de notre collaboration ?" required></textarea>
+      </div>
+      
+      <button type="submit" class="btn-outline-full">Envoyer mon avis</button>
+    </form>
+  </div>
+</section>
 
     <section id="contact" class="section container">
       <div class="contact-card-premium">
