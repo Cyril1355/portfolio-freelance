@@ -4,10 +4,8 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Cyril Bimbi — Développeur Freelance Python, C++ & Web</title>
-  <meta name="description" content="Développeur freelance expert en Python, C++ et création de sites web optimisés. Spécialiste IoT LoRaWAN.">
-  
+  <meta name="description" content="Développeur freelance expert en Python, C++ et IoT LoRaWAN.">
   <link rel="stylesheet" href="styles.css">
-  
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
@@ -21,7 +19,7 @@
         <h1>Cyril Bimbi</h1>
       </div>
       <nav class="nav">
-        <a href="#propos">À propos</a>
+        <a href="#accueil">Accueil</a>
         <a href="#competences">Expertise</a>
         <a href="#projets">Projets</a>
         <a href="#contact" class="cta">Démarrer un projet</a>
@@ -50,7 +48,9 @@
     </section>
 
     <section id="competences" class="section container">
-      <h3>Mes domaines d'intervention</h3>
+      <div style="text-align: center; margin-bottom: 40px;">
+        <h3>Mes domaines d'intervention</h3>
+      </div>
       <div class="skills-grid">
         <div class="skill-card">
           <span class="skill-icon">🐍</span>
@@ -71,7 +71,7 @@
     </section>
 
     <section id="projets" class="section container">
-      <h3>Projets phares</h3>
+      <h3>Projet phare</h3>
       <article class="project-card-premium">
         <div class="project-content">
           <div class="project-header">
@@ -79,14 +79,12 @@
             <h4>Distributeur Automatique Connecté (LoRaWAN)</h4>
           </div>
           <p>Participation majeure à la conception d'un système de distribution intelligente utilisant la technologie <strong>LoRa</strong> et le réseau <strong>TTN (The Things Network)</strong>.</p>
-          
           <ul class="project-details">
             <li><strong>Architecture :</strong> Conception et mise en place complète de la base de données SQL.</li>
             <li><strong>Automatisation :</strong> Scripts Bash/Python pour sauvegardes quotidiennes et gestion du stock.</li>
             <li><strong>Lecture Capteurs :</strong> Développement de la logique d'acquisition des données en temps réel.</li>
             <li><strong>Connectivité :</strong> Configuration complète des capteurs LoRa et intégration sur la console TTN.</li>
           </ul>
-          
           <div class="project-tags">
             <span>LoRaWAN</span> <span>TTN</span> <span>Python</span> <span>SQL</span> <span>Bash</span> <span>IoT</span>
           </div>
@@ -225,7 +223,7 @@
 
   <footer class="site-footer">
     <div class="container">
-      <p>&copy; 2026 Cyril Bimbi — Freelance • Tous droits réservés</p>
+      <p>&copy; <span id="year"></span> Cyril Bimbi — Freelance • Tous droits réservés</p>
     </div>
   </footer>
 
