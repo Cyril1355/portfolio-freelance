@@ -130,3 +130,62 @@ h3 { font-size: 2.2rem; font-weight: 800; margin-bottom: 24px; }
   .avatar { width: 220px; height: 220px; }
   .hero h2 { font-size: 2.2rem; }
 }
+/* --- Style Projets Premium --- */
+.project-card-premium {
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 40px;
+  margin-bottom: 30px;
+  transition: 0.3s;
+}
+
+.project-card-premium:hover {
+  border-color: var(--primary);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.badge-tech {
+  background: #f1f5f9;
+  color: var(--primary);
+  padding: 4px 12px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.project-details {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.project-details li {
+  margin-bottom: 10px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.project-details li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: var(--primary);
+  font-weight: bold;
+}
+
+.project-tags {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.project-tags span {
+  background: #e2e8f0;
+  padding: 5px 12px;
+  border-radius: 50px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
